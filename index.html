@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilo.css">
+    <script src="scripts/whatsapp.js" defer></script>
+
+</head>
+
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Jesús Armando Godínez García</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/hero.png" alt="">
+            </div>
+            <h1>Jesús Godínez</h1>
+            <h2>Ingeniero en Desarrollo y Gestión de Software</h2>
+            <h3>Desarrollador Fullstack</h3>
+
+            <div class="redes">
+                <a href="https://www.facebook.com/profile.php?id=100006375752354"><i
+                        class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" id="whatsappLink"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://www.linkedin.com/in/jes%C3%BAs-armando-god%C3%ADnez-garc%C3%ADa-a7027b296/"><i
+                        class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Jesús Godínez.</span> Me encanta la tecnologia, mi funte principal es el desarrollo de
+                software; tanto en frontend y backend, soy una persona muy responsable y apasionada con su trabajo,
+                tengo 2 años de experiencia en el mundo del desarrollo, mi objetivo es seguir siendo un gran profesional
+                y hacer mi historia en este mundo que se llamado evolución tecnológica. </p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            11-09-2002
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            5585588945
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            jesusarmandogodinezgarcia@gmail.com
+                        </li>
+
+                        <li>
+                            <strong>Dirección</strong>
+                            Estado de México, México.
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>Centers Developer en NTT DATA MÉXICO</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Hobbies</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-computer"></i>
+                            <span>DESARROLLO</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>DEPORTE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-car"></i>
+                            <span>AUTOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>FOTOS</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <button id="downloadBtn">
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Tecnológias</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Skills</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Java</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>php</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Git|GitHub</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Skills</h3>
+
+                    <div class="skill">
+                        <span>C#</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>React</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>SQL|MySQL|PosgreSQL</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>FrontEnd</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>BackEnd</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Ingeniería en Desarrollo y Gestión de Software</h4>
+                        <span class="casa">Universidad Tecnológica de Tecácmac</span>
+                        <span class="fecha">2020-2024</span>
+                        <p>Obtuve reconocimiento por hacer un proyecto para la ayuda a conseguir empleo.
+                        </p>
+                        <p> Estuve realizando proyectos que me ayudaron a mejorar en elambito profesional.
+                        </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Centers Developer</h4>
+                        <span class="casa">NTT DATA</span>
+                        <span class="fecha">Septiembre 2024 - Actualidad</span>
+                        <p>Desarrollo de microservios, creación, manipulación y optimización de componentes web para
+                            mejorar la interacción del usuario
+                            y la eficiencia del desarrollo.
+
+                        </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+
+                    <div class="item der">
+                        <h4>Microsoft 365 developer jr</h4>
+                        <span class="casa">Gya Consulting</span>
+                        <span class="fecha">2024 Enero-Junio</span>
+                        <p>Participé en el desarrrollo web para la administración de
+                            una cadena de barberias.</p>
+                        <p>
+                            Colaboré al desarrollo de la aplicación movil y sitio web
+                            de la empresa.
+                        </p>
+                        <p>Desarrollo de Apis Rest.</p>
+                        <p>Uso del marco de trabajo ágil Scrum</p>
+                        <p>
+                            Reuniones en equipo y con cliente.
+                        </p>
+                        <p>
+                            Utilización de tecnologia Microsoft 365, Power platform.
+                        </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Desarrollador Jr</h4>
+                        <span class="casa">Fuerza Aerea Mexicana</span>
+                        <span class="fecha">2022 Mayo-Agosto</span>
+                        <p>Colaboré al desarrollo del sistema para el gestionamiento
+                            de aeronaves.</p>
+                        <p>
+                            Utilicé el lenguaje de programación Java.
+                        </p>
+
+                        <p>
+                            Participé en reuniones con personal de investigación
+                            militar.
+                        </p>
+                        <p>
+                            Uso de PostgreSQL para la administración de datos de el
+                            mismo sistema.
+                        </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
