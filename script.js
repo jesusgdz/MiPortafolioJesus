@@ -45,7 +45,7 @@ window.onscroll = function(){
 ///PDF
 document.getElementById("downloadBtn").addEventListener("click", function() {
     const link = document.createElement("a");
-    link.href = "https://drive.google.com/file/d/1cUI19Azzxd2PQqIoKQKwW1SvkadH5OVE/view?usp=drive_link"; // Especifica la ruta del archivo PDF
+    link.href = "https://drive.google.com/file/d/1YHtaxIChmkB9Ma0JtqlVaYLix1NEfwdJ/view?usp=drive_link"; // Especifica la ruta del archivo PDF
     link.download = "CV.pdf"; // Nombre que tendrá el archivo descargado
     link.click();
 });
