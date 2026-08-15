@@ -11,12 +11,14 @@ html{
 }
 /* MENU */
 .contenedor-header{
-    background: #1e2326;
+    background: #151518;
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
     z-index: 99;
+    /*background: #1e2326;
+*/
 }
 .contenedor-header header{
     max-width: 1100px;
@@ -29,7 +31,13 @@ html{
 .contenedor-header header .logo a{
     font-family: 'Righteous';
     font-size: 20px;
-    color: #21568f;
+    color: #d3dbe4;
+    text-decoration: none;
+}
+.contenedor-header header .logo2 a{
+    font-family: 'Righteous';
+    font-size: 20px;
+    color: #d3dbe4;
     text-decoration: none;
 }
 .contenedor-header header ul{
@@ -56,6 +64,7 @@ html{
     display: none;
 }
 /* SECCION I N I C I O */
+/* SECCION I N I C I O parte 1 descomentar para que vuelva hacer una imagen el fongo
 .inicio{
     background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)),
     url(img/Fondo2.jpg);
@@ -65,9 +74,54 @@ html{
     display: flex;
     align-items: center;
 }
+    */
+
+    /*SE AGREGA ESTO PARA EL VIDEO */
+    .inicio {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+    }
+/* VIDEO DE FONDO */
+.video-fondo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+/* OSCURECER EL VIDEO */
+.overlay-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        to top,
+        rgba(30, 35, 38, 0.9),
+        rgba(30, 35, 38, 0.4)
+    );
+    z-index: 1;
+}
+
+/* CONTENIDO ENCIMA DEL VIDEO */
+.inicio .contenido-banner {
+    position: relative;
+    z-index: 2;
+}
+/* TERMINA VIDEO FUNCION*/
+
 .inicio .contenido-banner{
     padding: 20px;
-    background-color: #1e2326;
+    background-color: #151518;
     max-width: 350px;
     margin: auto;
     text-align: center;
@@ -107,7 +161,7 @@ html{
     background-color: #21568f;
 }
 .sobremi{
-    background-color: #1e2326;
+    background-color: #1d1d1f;
     color: #fff;
     padding: 50px 20px;
 }
@@ -254,7 +308,7 @@ html{
     position: absolute;
     top: 0;
     left: 0;
-    height: 8px;
+    height: 10px;
 }
 .skills .skill .barra-skill span{
     position: absolute;
@@ -271,7 +325,7 @@ html{
 /* Estas clases se agregaran dinamicamente mediante javascript */
 .skills .skill .javascript{
     width: 0%;
-    animation: 2s javascript forwards;
+    animation: 5s javascript forwards;
 }
 @keyframes javascript {
     0%{width: 0%;}
@@ -280,7 +334,7 @@ html{
 
 .skills .skill .htmlcss{
     width: 0%;
-    animation: 2s htmlcss forwards;
+    animation: 5s htmlcss forwards;
 }
 @keyframes htmlcss {
     0%{width: 0%;}
@@ -289,34 +343,34 @@ html{
 
 .skills .skill .photoshop{
     width: 0%;
-    animation: 2s photoshop forwards;
+    animation: 5s photoshop forwards;
 }
 @keyframes photoshop {
     0%{width: 0%;}
-    100%{width: 70%;}
+    100%{width: 85%;}
 }
 
 .skills .skill .wordpress{
     width: 0%;
-    animation: 2s wordpress forwards;
+    animation: 5s wordpress forwards;
 }
 @keyframes wordpress {
     0%{width: 0%;}
-    100%{width: 65%;}
+    100%{width: 80%;}
 }
 
 .skills .skill .drupal{
     width: 0%;
-    animation: 2s drupal forwards;
+    animation: 5s drupal forwards;
 }
 @keyframes drupal {
     0%{width: 0%;}
-    100%{width: 70%;}
+    100%{width: 85%;}
 }
 
 .skills .skill .comunicacion{
     width: 0%;
-    animation: 2s comunicacion forwards;
+    animation: 5s comunicacion forwards;
 }
 @keyframes comunicacion {
     0%{width: 0%;}
@@ -325,16 +379,16 @@ html{
 
 .skills .skill .trabajo{
     width: 0%;
-    animation: 2s trabajo forwards;
+    animation: 5s trabajo forwards;
 }
 @keyframes trabajo {
     0%{width: 0%;}
-    100%{width: 70%;}
+    100%{width: 85%;}
 }
 
 .skills .skill .creatividad{
     width: 0%;
-    animation: 2s creatividad forwards;
+    animation: 5s creatividad forwards;
 }
 @keyframes creatividad {
     0%{width: 0%;}
@@ -343,7 +397,7 @@ html{
 
 .skills .skill .dedicacion{
     width: 0%;
-    animation: 2s dedicacion forwards;
+    animation: 5s dedicacion forwards;
 }
 @keyframes dedicacion {
     0%{width: 0%;}
@@ -352,15 +406,15 @@ html{
 
 .skills .skill .proyect{
     width: 0%;
-    animation: 2s proyect forwards;
+    animation: 5s proyect forwards;
 }
 @keyframes proyect {
     0%{width: 0%;}
-    100%{width: 70%;}
+    100%{width: 80%;}
 }
 /* SECCION CURRICULUM */
 .curriculum{
-    background-color: #1e2326;
+    background-color: #151518;
     color: #fff;
     padding: 50px 20px;
 }
@@ -524,7 +578,7 @@ html{
 /* SECCION CONTACTO */
 .contacto{
     background-image: url(img/contact_bg.png);
-    background-color: #1e2326;
+    background-color: #151518;
     color: #fff;
     padding: 50px 0;
 }
