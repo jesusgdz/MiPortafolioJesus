@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
         integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Web Site Jesús Godínez</title>
+    <title>Web Site JG</title>
     <link rel="stylesheet" href="estilo.css">
     <script src="scripts/whatsapp.js" defer></script>
 
@@ -19,16 +19,19 @@
     <div class="contenedor-header">
         <header>
             <div class="logo">
-                <a href="#">Jesús Armando Godínez García</a>
+                <a href="#">System.out.println("BIENVENIDO");</a>
             </div>
             <nav id="nav">
                 <ul>
+                    <div class="logo2">
                     <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
                     <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
                     <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
                     <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
 
                 </ul>
+            </div>
+
             </nav>
             <div class="nav-responsive" onclick="mostrarOcultarMenu()">
                 <i class="fa-solid fa-bars"></i>
@@ -38,13 +41,21 @@
 
     <!-- SECCION INICIO -->
     <section id="inicio" class="inicio">
+
+         <!-- SE AGREGA ESTO PARA EL VIDEO -->
+        <video class="video-fondo" autoplay muted loop playsinline>
+            <source src="img/Video.mp4" type="video/mp4">
+            Tu navegador no soporta videos HTML5.
+        </video>
+        <!-- SE AGREGA ESTO PARA EL VIDEO -->
+
+        <div class="overlay-video"></div>
         <div class="contenido-banner">
             <div class="contenedor-img">
-                <img src="img/Perfil2.jpg" alt="">
+                <img src="img/Perfil.jpg" alt="">
             </div>
-            <h1>Jesús Godínez</h1>
-            <h2>Ingeniero en Desarrollo y Gestión de Software</h2>
-            <h3>Desarrollador</h3>
+            <h1>Jesús Armando Godínez García</h1>
+            <h2>Ingeniero en Gestión y Desarrollo de Software</h2>
 
             <div class="redes">
                 <a href="https://www.facebook.com/profile.php?id=100006375752354"><i
@@ -60,8 +71,11 @@
     <section id="sobremi" class="sobremi">
         <div class="contenido-seccion">
             <h2>Sobre Mí</h2>
-            <p><span>Hola, soy Jesús Godínez.</span> Me encanta la tecnología; mi enfoque principal es el desarrollo de software, tanto en frontend como en backend. Soy una persona muy responsable y apasionada por su trabajo. Tengo 2 años de experiencia en el mundo del desarrollo y mi objetivo es seguir creciendo como profesional, dejando mi huella en esta constante evolución tecnológica. </p>
-                <p>Actualmente, trabajo en NTT DATA México, pero laboro directamente con uno de sus clientes más importantes, que es BBVA México. Ocupo el cargo en ese banco como Desarrollador ASO, donde mi principal función es realizar servicios, desde el análisis hasta el desarrollo. 
+            <p><span>Hola Mundo...</span> Me apasiona la tecnología y todo lo que existe detrás de crear soluciones que realmente hagan la diferencia. Mi enfoque principal está en el desarrollo de software, tanto en frontend como en backend, y disfruto especialmente convertir ideas y necesidades en soluciones funcionales, eficientes y bien construidas.
+                Cuento con 2 años y 2 meses de experiencia profesional en el mundo del desarrollo y me considero una persona responsable, comprometida y, sobre todo, apasionada por lo que hago. Para mí, programar no es solamente escribir código; es aprender constantemente, resolver problemas y mantenerme en evolución dentro de una industria que nunca deja de sorprender.</p>
+                <p>Actualmente trabajo en BBVA México como Desarrollador, donde participo en el desarrollo de componentes, involucrándome en diferentes etapas del proceso, desde el análisis de requerimientos hasta su monitoreo. Esta experiencia me ha permitido fortalecer mis conocimientos técnicos y, al mismo tiempo, entender mejor cómo construir soluciones dentro de un entorno tecnológico de gran escala.
+
+                    Mi objetivo es seguir creciendo como profesional, aprender nuevas tecnologías, asumir nuevos retos y dejar mi propia huella en esta constante evolución tecnológica. 
                 
                 </p>
 
@@ -75,10 +89,6 @@
                             11-09-2002
                         </li>
                         <li>
-                            <strong>Teléfono</strong>
-                            5585588945
-                        </li>
-                        <li>
                             <strong>Email</strong>
                             jesusarmandogodinezgarcia@gmail.com
                         </li>
@@ -89,7 +99,7 @@
                         </li>
                         <li>
                             <strong>Cargo</strong>
-                            <span>Centers Developer en NTT DATA MÉXICO</span>
+                            <span>Desarrollador Fullstack</span>
                         </li>
                     </ul>
                 </div>
@@ -119,8 +129,8 @@
                             <span>DEPORTE</span>
                         </div>
                         <div class="interes">
-                            <i class="fa-solid fa-book"></i>
-                            <span>LIBROS</span>
+                            <i class="fa-solid fa-motorcycle"></i>
+                            <span>MOTOS</span>
                         </div>
                         <div class="interes">
                             <i class="fa-solid fa-car"></i>
@@ -169,7 +179,7 @@
                         <span>Java</span>
                         <div class="barra-skill">
                             <div class="progreso">
-                                <span>70%</span>
+                                <span>85%</span>
                             </div>
                         </div>
                     </div>
@@ -177,7 +187,7 @@
                         <span>Apis, Rest, Protocolos Http</span>
                         <div class="barra-skill">
                             <div class="progreso">
-                                <span>65%</span>
+                                <span>80%</span>
                             </div>
                         </div>
                     </div>
@@ -185,7 +195,7 @@
                         <span>Git|GitHub</span>
                         <div class="barra-skill">
                             <div class="progreso">
-                                <span>70%</span>
+                                <span>85%</span>
                             </div>
                         </div>
                     </div>
@@ -203,10 +213,10 @@
                         </div>
                     </div>
                     <div class="skill">
-                        <span>Scrum, Jira, bitbucket</span>
+                        <span>Scrum, Jira, Kanban</span>
                         <div class="barra-skill">
                             <div class="progreso">
-                                <span>70%</span>
+                                <span>85%</span>
                             </div>
                         </div>
                     </div>
@@ -230,7 +240,7 @@
                         <span>BackEnd</span>
                         <div class="barra-skill">
                             <div class="progreso">
-                                <span>70%</span>
+                                <span>80%</span>
                             </div>
                         </div>
                     </div>
@@ -280,9 +290,19 @@
                 <div class="col derecha">
                     <h3>Experiencia de trabajo</h3>
                     <div class="item der">
+                        <h4>Desarrollador</h4>
+                        <span class="casa">BBVA México</span>
+                        <span class="fecha">Abril 2025 - Actualidad</span>
+                        <p>Desarrollador Java orientado a soluciones backend empresariales e integración continua en BBVA. Especializado en la creación y optimización de componentes Java JAR de alto rendimiento e integración con bases de datos SQL Server. Cuenta con experiencia sólida en ejecución de procesos Batch, aplicación de patrones de diseño, testing integral (unitario, integración, regresión y aceptación) y despliegues en ambientes de pre-producción y producción bajo metodologías ágiles y buenas prácticas de desarrollo.
+                        </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
                         <h4>Desarrollador ASO</h4>
                         <span class="casa">BBVA México by NTT DATA</span>
-                        <span class="fecha">Enero 2025 - Actualidad</span>
+                        <span class="fecha">Enero 2025 - Abril 2026</span>
                         <p>Diseño de APIs, Desarrollo de APIs con Java: maven, Uso de herramientas de intregación 
                             continua, Jenkis, Git,
                             Pruebas unitarias y de integración,
